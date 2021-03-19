@@ -1,0 +1,121 @@
+/* --- Google Fonts --- */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* --- Components design --- */
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/bg-buttons.css");
+@import url("components/banner.css");
+@import url("components/cards.css");
+@import url("components/form.css");
+@import url("components/showcase.css");
+@import url("components/navbar.css");
+@import url("components/stats.css");
+@import url("components/margin-padding.css");
+@import url("components/grid.css");
+@import url("components/cli.css");
+@import url("components/cloud.css");
+@import url("components/languages.css");
+@import url("components/footer.css");
+
+/* Utilies design */
+
+@import url("utilities/grid.css");
+@import url("utilities/margin-padding.css");
+@import url("utilities/text-size.css");
+/* TODO: import new components */
+
+/* --- Fonts & colors --- */
+
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --light-color: #f4f4f4;
+  --dark-color: #002240;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', san-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Tablets and Under  */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid, 
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+/* Mobile  */
+@media (max-width: 500px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
+  }
+}
+
