@@ -21,10 +21,10 @@
   height: 100%;
 }
 
-.showcase-text,
+/* .showcase-text,
 .showcase-form {
-  /* border: 1px solid rgb(160, 141, 141); */
-}
+  border: 1px solid rgb(160, 141, 141);
+} */
 
 .showcase-form {
   position: relative;
@@ -59,7 +59,7 @@
   color: black;
   position: absolute;
   height: 100px;
-  bottom: -70px;
+  bottom: -90px;
   right: 0;
   left: 0;
   background: #fff;
